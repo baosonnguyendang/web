@@ -1,0 +1,194 @@
+html {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#header {
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid yellowgreen;
+}
+
+#header img {
+    float: left;
+    height: 70px;
+}
+
+#slogan {
+    margin-left: 150px;
+    height: 70px;
+    line-height: 70px;
+    margin-bottom: 0;
+}
+
+.menu {
+    display: inline;
+    margin-right: 2vw;
+    float: right;
+    margin-bottom: 0;
+}
+
+.menu li {
+    display: inline-block;
+    width: 98px;
+    font-style: italic;
+    margin-left: 5px;
+    line-height: 70px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.menu li:hover {
+    font-weight: bold;
+}
+
+.menu2 {
+    display: block;
+    position: absolute;
+    list-style: none;
+    width: 100vw;
+    background-color: white;
+    top: 60px;
+    padding-left: 0px;
+}
+
+.menu2 li {
+    height: 40px;
+    line-height: 40px;
+    margin-top: 5px;
+    border-bottom: 1px solid #aaa8a8;
+}
+
+.menu2 li a {
+    cursor: pointer;
+    padding-left: 5vw;
+    font-style: italic;
+}
+
+.menu2 li a:hover {
+    font-weight: bold;
+}
+
+#bar {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+    cursor: pointer;
+    line-height: 50px;
+}
+
+#close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+    cursor: pointer;
+    line-height: 50px;
+}
+
+#mid {
+    height: 70vh;
+}
+
+#mid1 {
+    float: left;
+    padding-left: 5vw;
+}
+
+#mid1 img {
+    max-height: 55vh;
+    width: auto;
+    margin-top: 6vh;
+}
+
+#mid2 {
+    float: left;
+    padding-left: 8vw;
+    padding-top: 25vh;
+    max-width: 50vw;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0px;
+    display: inline-block;
+    width: 100%;
+    background-color: rgb(196, 192, 192);
+    padding-top: 10px;
+}
+
+#f1 {
+    padding-left: 20px;
+    width: 65vw;
+    float: left;
+}
+
+#f2 {
+    width: 35vw;
+    height: 100%;
+    float: right;
+    padding-left: 5%;
+    padding-top: 5px;
+}
+
+#f2 a {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    #mid2 {
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 972px) {
+    #mid2 {
+        width: 35vw;
+    }
+    #mid1 img {
+        max-height: 50vh;
+        margin-top: 7vh;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    #bar {
+        display: none;
+    }
+    #close {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .menu {
+        display: none;
+    }
+
+    #bar {
+        display: block;
+    }
+
+    #header {
+        height: 60px;
+    }
+
+    #header img {
+        height: 60px
+    }
+
+    #slogan {
+        height: 60px;
+        line-height: 60px;
+        margin-left: 125px;
+    }
+
+    #footer {
+        display: grid;
+    }
+
+    #f2 {
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+}
