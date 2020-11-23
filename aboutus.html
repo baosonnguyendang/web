@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab1</title>
+    <link rel="stylesheet" type="text/css" href="lab1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id='header'>
+        <img src='/images/1.png'>
+        <ul id='menu' class='menu'>
+            <li><a href='aboutus.html'>About Us</a></li>
+            <li><a href='ourproducts.html'>Our Products</a></li>
+            <li><a>Careers</a></li>
+            <li><a>Contact Us</a></li>
+        </ul>
+        <div id='slogan'>
+            <p style='font-family: cursive; font-size: 36px; color:red;'><a href='trangchu.html'><b>HASH </b></a></p>
+        </div>
+        <div id='bar'>
+            <a><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+        </div>
+        <div id='close'>
+            <a><i class="fa fa-times fa-2x" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <div id='about'>
+        <div id='slide'>
+            <figure>
+                <img src='images/4.png'>
+                <img src='images/5.png'>
+                <img src='images/6.png'>
+                <img src='images/7.png'>
+                <img src='images/4.png'>
+            </figure>
+        </div>
+        <div id='about2'>
+            <h1>We Exist to Inspire the World to Play</h1>
+            <p>Day in and day out, we always bring you best-ever gaming experience</p>
+        </div>
+        <div class='about3'>
+            <h1>Who we are</h1>
+            <p>Established in 2020, HASH is a global leader in digital interactive entertainment. HASH develops and delivers games, content and online services for Internet-connected consoles, mobile devices and personal computers. HASH has more than 1 million registered players around the world.</p>
+            <p>In the first half of 2020, HASH had an revenue of over $1.5 million. Headquartered in Di An, Binh Duong, HASH is recognized for a portfolio of critically acclaimed, high-quality brands.</p>    
+        </div>
+        <div class='about3'>
+            <h1>HASH's values</h1>
+            <div class='about4'>
+                <img height='100px' width='100px' src='images/passion.jpg' alt=''>
+                <div>
+                    <h3><b>PASSION</b></h3>
+                    <p>We are at our best when we pursue what we love, and have fun doing it</p>
+                </div>
+            </div>
+            <div class='about4'>
+                <img height='100px' width='100px' src='images/learning.jpg' alt=''>
+                <div>
+                    <h3><b>LEARNING</b></h3>
+                    <p>Listening, having humility and being open to new ways of thinking.</p>
+                </div>
+            </div>
+        </div>
+        <div id='slide-left'></div>
+        <div id='slide-right'></div>
+    </div>
+    <div class='footer' id='footer2'>
+        <div id='f1'>
+            <p style='font-size: 22px; margin-bottom: 10px;'><b>Công ty TNHH HASH</b></p>
+            <p style='font-size: 14px; margin-bottom: 5px;'>Address: Khu đô thị ĐHQG TPHCM, Phường Đông Hòa, TP Dĩ An, Bình Dương</p>
+            <p style='font-size: 14px; margin-bottom: 5px;'>Email: noreply@hcmut.edu.vn</p>
+        </div>
+        <div id='f2'>
+            <p style='font-size: 20px;'><b>FOLLOW US</b></p>
+            <a href="#"><span class="fa fa-facebook-official fa-2x" style='color: #4267B2;'></span></a>
+            <a href="#"><span class="fa fa-twitter fa-2x" style='color: #1DA1F2;'></span></a>
+            <a href="#"><span class="fa fa-skype fa-2x" style='color: #00AFF0;'></span></a>
+            <a href="#"><span class="fa fa-youtube-play fa-2x" style='color: red;'></span></a>
+        </div>
+    </div>
+    <script>
+        $("#bar").click(function(){
+            $("#bar").css("display","none")
+            $("#close").css("display","block")
+            document.getElementById('menu').className = "menu2";
+        })
+        $("#close").click(function(){
+            $("#close").css("display","none")
+            $("#bar").css("display","block")
+            document.getElementById("menu").className = "menu";
+        })
+        $(window).resize(function(){
+            if ($("#menu").css("display") == 'block') {
+                $("#bar").css("display","none")
+            }
+            if ($("#menu").css("display") == 'none') {
+                $("#bar").css("display","block")
+            }
+            if ($("#menu").css("display") == 'inline'){
+                $("#close").css("display","none")
+                $("#bar").css("display","none")
+            }
+            if (window.innerWidth > 767){
+                document.getElementById("menu").className = "menu";
+                $("#bar").css("display","none")
+                $("#close").css("display","none")
+            }
+            if ($("#bar").css("display") == 'none' && $("#close").css("display") == 'none'){
+                document.getElementById("menu").className = "menu";
+            }
+        })
+        // transition image
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("image");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 3000);
+        }
+    </script>
+</body>
+</html>
