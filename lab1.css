@@ -374,3 +374,29 @@ html {
 #footer2 {
     position: relative;
 }
+
+/* our products */
+#products {
+    padding: 0 5vw;
+    height: 100%;
+    display: inline-block;
+    flex-flow: nowrap;
+    width: 100vw;
+}
+
+#products div {
+    display: inherit;
+    flex-basis: auto;
+    width: 33%;
+    padding: 3% 3vw;
+}
+
+@media screen and (max-width: 875px) {
+    #products div {
+        width: 49vw;
+    }
+}
+
+#products div img {
+    width: 100%;
+}
