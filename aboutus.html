@@ -12,12 +12,12 @@
 </head>
 <body>
     <div id='header'>
-        <img src='/images/1.png'>
+        <img src='/images/1.png' alt=''>
         <ul id='menu' class='menu'>
             <li><a href='aboutus.html'>About Us</a></li>
             <li><a href='ourproducts.html'>Our Products</a></li>
             <li><a>Careers</a></li>
-            <li><a>Contact Us</a></li>
+            <li><a href='contactus.html'>Contact Us</a></li>
         </ul>
         <div id='slogan'>
             <p style='font-family: cursive; font-size: 36px; color:red;'><a href='trangchu.html'><b>HASH </b></a></p>
@@ -32,11 +32,11 @@
     <div id='about'>
         <div id='slide'>
             <figure>
-                <img src='images/4.png'>
-                <img src='images/5.png'>
-                <img src='images/6.png'>
-                <img src='images/7.png'>
-                <img src='images/4.png'>
+                <img src='images/4.png' alt=''>
+                <img src='images/5.png' alt=''>
+                <img src='images/6.png' alt=''>
+                <img src='images/7.png' alt=''>
+                <img src='images/4.png' alt=''>
             </figure>
         </div>
         <div id='about2'>
@@ -51,14 +51,14 @@
         <div class='about3'>
             <h1>HASH's values</h1>
             <div class='about4'>
-                <img height='100px' width='100px' src='images/passion.jpg' alt=''>
+                <img style='height: 100px; width: 100px' src='images/passion.jpg' alt=''>
                 <div>
                     <h3><b>PASSION</b></h3>
                     <p>We are at our best when we pursue what we love, and have fun doing it</p>
                 </div>
             </div>
             <div class='about4'>
-                <img height='100px' width='100px' src='images/learning.jpg' alt=''>
+                <img style='height: 100px; width: 100px' src='images/learning.jpg' alt=''>
                 <div>
                     <h3><b>LEARNING</b></h3>
                     <p>Listening, having humility and being open to new ways of thinking.</p>
@@ -113,23 +113,6 @@
                 document.getElementById("menu").className = "menu";
             }
         })
-        // transition image
-        var myIndex = 0;
-        carousel();
-
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("image");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
-            }
-            myIndex++;
-            if (myIndex > x.length) {
-                myIndex = 1
-            }    
-            x[myIndex-1].style.display = "block";  
-            setTimeout(carousel, 3000);
-        }
     </script>
 </body>
 </html>

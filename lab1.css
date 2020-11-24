@@ -274,7 +274,7 @@ html {
     margin: 0;
     margin-left: 15%;
     left: 0;
-    animation: 20s slider infinite;
+    animation: 18s slider infinite;
 }
 
 #slide figure img {
@@ -331,7 +331,7 @@ html {
 
 .about4 {
     display: inline-flex;
-    margin-top: 5vh;
+    /* margin-top: 5vh; */
 }
 
 .about4 div {
@@ -399,4 +399,27 @@ html {
 
 #products div img {
     width: 100%;
+}
+
+/* contact us */
+
+#googleMap {
+    margin-top: 1px;
+    height: calc(100vh - 71px);
+    width: 100vw;
+}
+
+#contact {
+    margin-top: 30px;
+    margin-left: 5vw;
+}
+
+#contact h2 {
+    padding-bottom: 15px;
+    width: 550px;
+    border-bottom: 1px solid #aaa8a8;
+}
+
+#myForm {
+    margin: 20px 0;
 }
