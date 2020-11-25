@@ -384,21 +384,47 @@ html {
     width: 100vw;
 }
 
-#products div {
+#products > div {
     display: inherit;
     flex-basis: auto;
-    width: 33%;
-    padding: 3% 3vw;
+    width: 26%;
+    margin: 3% 3vw;
+    position: relative;
 }
 
 @media screen and (max-width: 875px) {
-    #products div {
-        width: 49vw;
+    #products > div {
+        width: 42%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #products > div {
+        width: 90%;
     }
 }
 
 #products div img {
     width: 100%;
+}
+
+#products div img:hover {
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0.1;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    display: none;
+    font-size: 28px;
+}
+
+.centered:hover {
+    display: block;
 }
 
 /* careers */
@@ -478,14 +504,36 @@ html {
 #contact {
     margin-top: 30px;
     margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 #contact h2 {
-    padding-bottom: 15px;
+    padding-bottom: 5px;
     width: 550px;
+}
+
+#contact p {
+    font-size: 14px;
+    padding-bottom: 15px;
     border-bottom: 1px solid #aaa8a8;
 }
 
 #myForm {
     margin: 20px 0;
+}
+
+#myForm div div {
+    width: 45%;
+    display: inline;
+    margin-right: 10vw;
+}
+
+#myForm label {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 795px) {
+    #myForm div div {
+        display: block;
+    }
 }

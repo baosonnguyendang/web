@@ -36,21 +36,27 @@
     <div id='products'>
         <div>
             <img src='images/product1.jpg' alt=''>
+            <div class="centered"><b>BUY GAME</b></div>
         </div>
         <div>
             <img src='images/product2.jpg' alt=''>
+            <div class="centered"><b>BUY GAME</b></div>
         </div>
         <div>
             <img src='images/product3.jpg' alt=''>
+            <div class="centered"><b>BUY GAME</b></div>
         </div>
         <div>
             <img src='images/product4.jpg' alt=''>
+            <div class="centered"><b>BUY GAME</b></div>
         </div>
         <div>
             <img src='images/product5.jpg' alt=''>
+            <div class="centered"><b>BUY GAME</b></div>
         </div>
         <div>
             <img src='images/product6.jpg' alt=''>
+            <div class="centered"><b>BUY GAME</b></div>
         </div>
     </div>
     <div class='footer' id='footer2'>
@@ -98,6 +104,11 @@
                 document.getElementById("menu").className = "menu";
             }
         })
+        $("#products > div").hover(function(){
+            $(this).children("div").css("display", "block");
+            }, function(){
+            $(this).children("div").css("display", "none");
+        })  
     </script>
 </body>
 </html>
