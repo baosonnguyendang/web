@@ -401,6 +401,72 @@ html {
     width: 100%;
 }
 
+/* careers */
+#careers {
+    /* padding: 5px 5vw; */
+}
+
+#careers h1 {
+    margin: 20px 0;
+    padding: 5px 5vw;
+}
+
+#careers img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 5px 5vw;
+}
+
+#careers-intro {
+    text-align: center;
+    margin: 80px 0 50px 0;
+    padding: 15px 10vw;
+    background-color: #28AF8F;
+    color: white;
+}
+
+#careers-intro h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+#o {
+    display: flex;
+    padding: 5px 5vw;
+}
+
+#opportunities-img {
+    width: 30vw;
+    height: 30vw;
+}
+
+#opportunities-img img {
+    padding: 0 !important;
+}
+
+#opportunities {
+    margin-left: 5vw;
+    width: 55vw;
+}
+
+.opportunity {
+    padding: 10px 0;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.opportunity p {
+    margin: 1px 0;
+    font-size: 14px;
+    width: 60%;
+}
+
+.p {
+    font-size: 24px;
+    color: #5fa152;
+    cursor: pointer;
+}
+
 /* contact us */
 
 #googleMap {
