@@ -38,6 +38,7 @@
         <div id='mid1'>
             <img class='image' src='/images/2.jpg' alt=''>
             <img class='image' src='/images/3.jpg' alt=''>
+            <div class="centered"><a href='aboutus.html'><b>Find who we are</b></a></div>
         </div>
     </div>
     <div class='footer' id='footer1'>
@@ -102,6 +103,15 @@
             x[myIndex-1].style.display = "block";  
             setTimeout(carousel, 3000);
         }
+        $("#mid1").hover(function(){
+            $(this).children("div").css("display", "block");
+            $(this).children("img").css("transition", "opacity 0.2s");
+            $(this).children("div").css("opacity", "1");
+            $(this).children("img").css("opacity", "0.1");
+            }, function(){
+            $(this).children("div").css("display", "none");
+            $(this).children("img").css("opacity", "1");
+        })  
     </script>
 </body>
 </html>
