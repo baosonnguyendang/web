@@ -234,6 +234,10 @@ html {
         margin-left: 75px;
     }
 
+    #footer1 {
+        position: relative;
+    }
+
     .footer {
         position: relative;
         display: grid;
