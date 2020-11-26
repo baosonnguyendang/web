@@ -274,7 +274,7 @@ html {
     margin: 0;
     margin-left: 15%;
     left: 0;
-    animation: 18s slider infinite;
+    animation: 10s slider infinite;
 }
 
 #slide figure img {
@@ -398,7 +398,7 @@ html {
     }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 600px) {
     #products > div {
         width: 90%;
     }
@@ -428,9 +428,6 @@ html {
 }
 
 /* careers */
-#careers {
-    /* padding: 5px 5vw; */
-}
 
 #careers h1 {
     margin: 20px 0;
@@ -463,8 +460,7 @@ html {
 }
 
 #opportunities-img {
-    width: 30vw;
-    height: 30vw;
+    width: 400px;
 }
 
 #opportunities-img img {
@@ -491,6 +487,40 @@ html {
     font-size: 24px;
     color: #5fa152;
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 790px) {
+    #o {
+        display: block;
+    }
+
+    #opportunities-img {
+        margin: 0 auto;
+    }
+
+    #opportunities {
+        margin: 30px 0;
+        width: 100%;
+    }
+
+    #opportunities h3 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #careers-intro {
+        margin-top: 20px;
+    }
+
+    #careers-intro h3 {
+        font-size: 28px;
+    }
+
+    #opportunities-img {
+        width: 100%;
+    }
 }
 
 /* contact us */
@@ -532,8 +562,23 @@ html {
     margin-bottom: 20px;
 }
 
+textarea {
+    width:60%; 
+    height: 200px;
+}
+
 @media screen and (max-width: 849px) {
     #myForm div div {
         display: block;
+        width: 99%;
+    }
+    textarea {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 341px) {
+    #myForm label {
+        margin-bottom: 0;
     }
 }
