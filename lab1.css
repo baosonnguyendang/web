@@ -427,6 +427,23 @@ html {
     position: relative;
 }
 
+.f1-iframe {
+    position: relative;
+    padding-bottom: 190px;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    display:block;
+    }
+.f1-iframe iframe,
+.f1-iframe object,
+.f1-iframe embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
 @media screen and (max-width: 875px) {
     #products > div {
         width: 42%;
