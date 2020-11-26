@@ -4,7 +4,6 @@ html {
 }
 
 #header {
-    padding-left: 10px;
     height: 70px;
     width: 100%;
     border-bottom: 1px solid yellowgreen;
@@ -37,7 +36,7 @@ html {
 
 .menu li {
     display: inline-block;
-    width: 98px;
+    width: 105px;
     font-style: italic;
     margin-left: 5px;
     line-height: 70px;
@@ -533,7 +532,7 @@ html {
     margin-bottom: 20px;
 }
 
-@media screen and (max-width: 795px) {
+@media screen and (max-width: 849px) {
     #myForm div div {
         display: block;
     }
