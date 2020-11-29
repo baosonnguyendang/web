@@ -112,7 +112,7 @@ html {
 
 #mid1 img {
     max-height: 55vh;
-    width: auto;    
+    width: inherit;    
     /* animation: a 3s linear infinite; */
 }
 
