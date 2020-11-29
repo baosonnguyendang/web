@@ -582,7 +582,7 @@ height: 100%;
 
 #contact h2 {
     padding-bottom: 5px;
-    width: 550px;
+    /* width: 550px; */
 }
 
 #contact p {
